@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" class="dark">
+
+<head>
+  <!-- Essential Meta Tags (must be first) -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>أحمد حسن | مطور واجهات أمامية</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="مطور واجهات أمامية متخصص في React و Next.js و TypeScript. أبني تجارب رقمية استثنائية مع التركيز على الأداء وتجربة المستخدم." />
+  <meta name="keywords" content="مطور ويب, React, Next.js, TypeScript, تصميم واجهات, مطور أمامي" />
+  <meta name="author" content="أحمد حسن" />
+  <meta name="theme-color" content="#6366f1" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ahmedhasan.dev/" />
+  <meta property="og:title" content="أحمد حسن | مطور واجهات أمامية" />
+  <meta property="og:description"
+    content="مطور واجهات أمامية متخصص في React و Next.js و TypeScript. أبني تجارب رقمية استثنائية." />
+  <meta property="og:image" content="https://ahmedhasan.dev/og-image.png" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://ahmedhasan.dev/" />
+  <meta name="twitter:title" content="أحمد حسن | مطور واجهات أمامية" />
+  <meta name="twitter:description" content="مطور واجهات أمامية متخصص في React و Next.js و TypeScript." />
+  <meta name="twitter:image" content="https://ahmedhasan.dev/og-image.png" />
+
+  <!-- Resource Hints (preconnect includes dns-prefetch) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- Preload Critical Fonts -->
+  <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-solid-900.woff2"
+    as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-brands-400.woff2"
+    as="font" type="font/woff2" crossorigin /> -->
+
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+
+  <!-- BootStrap CSS File -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+
+  <!-- Google Fonts - Non-render-blocking -->
+   <!-- Tajawal font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+   <!-- Alexandria Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
+   <!-- Cairo Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/imgs/favicon.png" />
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- MediaQuery CSS File -->
+  <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarOffcanvas" data-bs-smooth-scroll="true" tabindex="0" class="font-family-main-Tajawal">
+  <!-- Skip to Content Link for Accessibility -->
+  <!-- <a
+      href="#main-content"
+      class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+    >
+      تخطي إلى المحتوى الرئيسي
+    </a> -->
+
+  <!-- navbar started -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-nav position-fixed top-0 start-0 end-0 border-bottom border-white border-opacity-10 shadow" style="z-index: 999;">
+    <div class="container-fluid p-0 py-1 px-lg-4">
+      <div class="navbar-brand d-flex justify-content-center align-items-center gap-3">
+        <div class="bg-brand rounded-3 d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-code text-fff-icon"></i>
+        </div>
+        <h2 class="bg-brand h3 navbar-brand-text fw-semibold">عمرو خالد</h2>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+        aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white small"></i>
+      </button>
+
+      <div class="offcanvas offcanvas-end w-100 h-75 bg-main2 text-white" tabindex="-1" id="navbarOffcanvas"
+          data-bs-backdrop="false" style="top: 75px;" aria-labelledby="navbarOffcanvasLabel">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column flex-lg-row align-items-center gap-3">
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75 active w-auto" aria-current="page" href="#hero-section">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75" href="#about">عني</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75" href="#portfolio">الأعمال</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75" href="#experience">الخبرة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75" href="#testimonials">التوصيات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative text-white text-opacity-75" href="#contact">تواصل</a>
+            </li>
+            <li class="me-3">
+              <button id="btn-color-page" class="bg-section py-1 border-0 rounded-4 d-flex justify-content-start" style="width: 70px;">
+                <div class="bg-main rounded-circle text-center" style="width: 25px;height: 25px;">
+                  <i class="fas fa-moon bg-brand navbar-brand-text small"></i>
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content" class="mt-5">
+    <!-- ============================================
+        HERO SECTION - Modern Split Layout Design
+        ============================================ -->
+
+    <section id="hero-section" class="py-5 bg-nav min-vh-100 overflow-hidden shadow">
+      <div class="container-fluid">
+        <div class="row" dir="ltr">
+          <div class="col-lg-6 my-5 py-lg-5" dir="rtl">
+            <div class="m-0 mt-lg-5">
+              <div class="d-flex justify-content-center align-items-center position-relative">
+                <div class="circle-element-design position-absolute rounded-circle border-color1 d-flex justify-content-center align-items-center">
+                </div>
+                <div class="header-img d-flex justify-content-center align-items-center position-relative rounded-circle border border-2 border-color">
+                  <img src="assets/imgs/hero-section-img-Dsy3Av-w.webp" class="rounded-circle border border-color" alt="hero section img">
+                  <div class="icon-anmtion-1 bg-section d-flex justify-content-center align-items-center rounded-4
+                      border border-white border-opacity-50 position-absolute w-media-60px-lg w-media-50px-sm h-media-60px-lg h-media-50px-sm">
+                    <i class="fas fa-code fs-2 text-primary"></i>
+                  </div>
+                  <div class="icon-anmtion-2 bg-section d-flex justify-content-center align-items-center rounded-4
+                      border border-white border-opacity-50 position-absolute  w-media-50px-lg w-media-40px-sm h-media-60px-lg h-media-50px-sm">
+                    <i class="fa-brands fa-vuejs fs-2 text-success"></i>
+                  </div>
+                  <div class="icon-anmtion-3 bg-section d-flex justify-content-center align-items-center rounded-4
+                      border border-white border-opacity-50 position-absolute w-media-60px-lg w-media-50px-sm h-media-60px-lg h-media-50px-sm">
+                    <i class="fa-brands fa-react fs-2 text-info"></i>
+                  </div>
+                  <div class="icon-anmtion-4 bg-section d-flex justify-content-center align-items-center rounded-4
+                      border border-white border-opacity-50 position-absolute w-media-50px-lg w-media-40px-sm h-media-60px-lg h-media-50px-sm">
+                    <i class="fa-brands fa-figma fs-2 text-danger text-opacity-75"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" dir="rtl">
+            <div class="pe-2 pe-md-3 d-flex flex-column align-items-center align-items-lg-start">
+              <div class="py-2 mb-1 rounded-5 bg-success bg-opacity-25 d-flex justify-content-evenly align-items-center
+                    border border-success" style="width: 170px;">
+                <div class="circle-plus-div rounded-circle bg-success" style="width: 11px;height: 11px;"></div>
+                <p class="m-0 text-success fw-bolder small">متاح للشغل الحر</p>
+              </div>
+              <div class="mt-4 text-center text-lg-end">
+                <p class="text-white text-opacity-50 fs-4 m-0">مرحباً، أنا 👋</p>
+                <h1 class="bg-brand navbar-brand-text display-1 fw-bold">عمرو خالد</h1>
+              </div>
+              <div class="mt-4 py-2 rounded-5 bg-section bg-opacity-25 d-flex justify-content-evenly align-items-center
+                    border border-white border-opacity-25" style="width: 230px;">
+                <div class="bg-brand rounded-circle d-flex justify-content-center align-items-center" style="width: 30px;height: 30px;">
+                  <i class="fas fa-code text-fff-icon small"></i>
+                </div>
+                <p class="m-0 text-white fw-bolder small">Frontend Developer</p>
+              </div>
+              <div class="mt-4 text-center text-lg-end">
+                <p class="text-white text-opacity-50 fs-5 fs-media-min-sm fw-medium w-75 mx-auto mx-lg-0 m-0">بحول أفكارك لـ<span class="text-brand2"> تجارب رقمية مميزة</span>. متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.</p>
+              </div>
+              <div class="d-flex flex-column align-items-lg-end align-items-center w-100">
+                <div class="row w-75 w-media-100-sm mt-5">
+                  <div class="col-7">
+                    <button class="me-auto my-btn-header d-flex justify-content-center align-items-end gap-2 fw-semibold py-3 fs-media-mobile-5 rounded-4 text-fff-icon border-0 bg-brand"
+                        style="width: 90%;">استكشف أعمالي
+                      <i class="fas fa-arrow-left small"></i>
+                    </button>
+                  </div>
+                  <div class="col-5">
+                    <button class="contact-me-btn d-flex justify-content-center align-items-end gap-2 fw-semibold py-3 fs-media-mobile-4 rounded-4 text-white bg-section
+                        border-white border-opacity-50 w-100">تواصل معي
+                        <i class="fas fa-paper-plane small"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row w-75 w-media-100-sm mt-4">
+                  <div class="col-3 px-1">
+                    <div>
+                      <div class="brands-1 bg-section text-white py-3 gap-1 gap-md-2 rounded-4 border border-white border-opacity-10 d-flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-react fs-5 fs-media-mobile-5 text-info"></i>
+                        <p class="m-0 fw-semibold small fs-media-mobile-5">React</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 px-1">
+                    <div>
+                      <div class="brands-2 bg-section text-white py-3 gap-1 gap-md-2 rounded-4 border border-white border-opacity-10 d-flex align-items-center justify-content-center">
+                        <i class="fa-brands fs-5 fs-media-mobile-5 fa-typescript text-primary"></i>
+                        <p class="m-0 fw-semibold small fs-media-mobile-5">Typescript</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 px-1">
+                    <div>
+                      <div class="brands-3 bg-section text-white py-3 gap-1 gap-md-2 rounded-4 border border-white border-opacity-10 d-flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-tailwind-css fs-5 fs-media-mobile-5 text-info"></i>
+                        <p class="m-0 fw-semibold small fs-media-mobile-5">Tailwind</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3 px-1">
+                    <div>
+                      <div class="brands-4 bg-section text-white py-3 gap-1 gap-md-2 rounded-4 border border-white border-opacity-10 d-flex align-items-center justify-content-center">
+                        <svg class="w-13px-mobile" style="width: 23px;" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.572 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"></path>
+                        </svg>
+                        <p class="m-0 fw-semibold small fs-media-mobile-5">Next.js</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#about" class="anchor-link-next position-relative d-none d-lg-flex border border-2 border-white border-opacity-50 rounded-4 justify-content-center" style="width: 25px;height: 45px;">
+            <p class="d-none d-md-block m-0 small position-absolute bottom-100 mb-2" style="width: 100px;">أكتشف المزيد</p>
+            <div class="bg-anmti-moues bg-opacity-50 mt-2 rounded-2" style="width: 5px;height: 12px;"></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+        ABOUT SECTION
+        ============================================ -->
+    <section id="about" class="bg-main">
+      <div class="container py-5 position-relative">
+        <div class="layer-section-about layer-circle-about0 position-absolute rounded-circle"></div>
+
+        <div class="text-center mb-5 position-relative z-1">
+          <span class="text-primary fw-medium fs-5 d-block mb-2">من أنا</span>
+          <h2 class="display-4 fw-bold text-white">عن <span class="bg-brand navbar-brand-text">عمرو خالد</span></h2>
+          <div class="section-title-bar mx-auto bg-brand rounded-pill"></div>
+        </div>
+
+        <div class="row g-5 align-items-start position-relative z-1">
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <div class="display-1 text-primary opacity-10 position-absolute top-0 start-0" style="font-size:5rem;">
+              </div>
+              <div class="text-white">
+                <h3 class="fw-bold mb-4">بحب أحول الأفكار <span class="text-primary">لواقع رقمي</span></h3>
+                <p class="fw-medium ms-5">مطور واجهات أمامية بخبرة +8 سنوات في بناء تطبيقات ويب حديثة وتصميم تجارب
+                  مستخدم استثنائية.</p>
+                <p class="fw-medium ms-5">بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان أقدم حلول عالية
+                  الجودة وتعدي التوقعات.</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 mt-5">
+              <span class="badge bg-section text-white p-3 rounded-pill"><i
+                  class="fa-solid fa-graduation-cap text-primary ms-2"></i>حاسبات ومعلومات</span>
+              <span class="badge bg-section text-white p-3 rounded-pill"><i
+                  class="fa-solid fa-briefcase text-info ms-2"></i>+50 مشروع</span>
+              <span class="badge bg-section text-white p-3 rounded-pill"><i
+                  class="fa-solid fa-users text-info ms-2"></i>+35 عميل سعيد</span>
+            </div>
+
+            <div class="bg-section p-4 rounded-4 mt-4 border border-white border-opacity-25 text-white ">
+              <h5 class="fw-bold">ما أقدمه<i class="fa-solid fa-rocket text-primary me-2"></i></h5>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2"><span class="bg-primary rounded-circle d-inline-block ms-2" style="width: 7px;height: 7px;"></span>تطوير تطبيقات ويب متكاملة بـ
+                  React & Next.js</li>
+                <li class="mb-2"><span class="bg-info bg-opacity-50 rounded-circle d-inline-block ms-2" style="width: 7px;height: 7px;"></span>تصميم واجهات مستخدم حديثة
+                  وجذابة</li>
+                <li class="mb-2"><span class="bg-info rounded-circle d-inline-block ms-2" style="width: 7px;height: 7px;"></span>تحسين الأداء وسرعة التحميل
+                </li>
+                <li class="mb-2"><span class="bg-success rounded-circle d-inline-block ms-2" style="width: 7px;height: 7px;"></span>تطوير مواقع متوافقة مع جميع
+                  الأجهزة</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="codeing-snap rounded-5 border border-secondary overflow-hidden">
+              <div class="d-flex align-items-center gap-2 px-4 py-3" style="background: #1D293D;">
+                <span class="bg-danger rounded-circle" style="width:12px;height:12px;"></span>
+                <span class="bg-warning rounded-circle" style="width:12px;height:12px;"></span>
+                <span class="bg-success rounded-circle" style="width:12px;height:12px;"></span>
+                <span class="text-white-50 small fw-semibold me-3">Amr.js</span>
+              </div>
+              <pre class="text-light p-4 py-5 m-0"
+                style="font-family:monospace; direction:ltr; text-align:left; font-size:0.9rem; background: #030718;">
+  <span class="text-purple">const</span> <span class="text-info">ahmed</span> = {
+    <span class="text-success">name</span>: <span class="text-warning">"عمرو خالد"</span>,
+    <span class="text-success">title</span>: <span class="text-warning">"Frontend Developer"</span>,
+    <span class="text-success">experience</span>: <span class="text-orange">8</span> + <span class="text-warning">" years"</span>,
+    <span class="text-success">location</span>: <span class="text-warning">"Cairo, Egypt 🇪🇬"</span>,
+    <span class="text-success">skills</span>: [
+      <span class="text-warning">"React"</span>, <span class="text-warning">"Next.js"</span>,
+      <span class="text-warning">"TypeScript"</span>, <span class="text-warning">"Tailwind + BootStrap"</span>
+    ],
+    <span class="text-success">passion</span>: <span class="text-warning">"Creating pixel-perfect UIs"</span>,
+    <span class="text-success">available</span>: <span class="text-info">true</span>,
+    <span class="text-success">hireable</span>: <span class="text-info">true</span>
+  };
+  <span class="text-purple">export default</span> <span class="text-info">amr</span>;
+              </pre>
+            </div>
+
+            <div class="row g-3 mt-4">
+              <div class="col-4 text-center">
+                <div class="proiect-about bg-section p-3 rounded-3 border border-white border-opacity-25">
+                  <div class="display-5 fw-bold text-primary">50+</div>
+                  <div class="text-white-50 small">مشروع</div>
+                </div>
+              </div>
+              <div class="col-4 text-center">
+                <div class="years-about bg-section p-3 rounded-3 border border-white border-opacity-25">
+                  <div class="display-5 fw-bold text-info">8+</div>
+                  <div class="text-white-50 small">سنوات</div>
+                </div>
+              </div>
+              <div class="col-4 text-center">
+                <div class="years-about bg-section p-3 rounded-3 border border-white border-opacity-25">
+                  <div class="display-5 fw-bold text-info">35+</div>
+                  <div class="text-white-50 small">عميل</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-end mt-4">
+              <a href="#" class="social-icon0 bg-section text-white btn py-2 rounded-3"><i class="fa-brands fa-github fa-lg"></i></a>
+              <a href="#" class="social-icon1 bg-section text-white btn py-2 rounded-3"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+              <a href="#" class="social-icon2 bg-section text-white btn py-2 rounded-3"><i class="fa-brands fa-twitter fa-lg"></i></a>
+              <a href="#" class="social-icon3 bg-section text-white btn py-2 rounded-3"><i class="fa-brands fa-dribbble fa-lg"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer-section-about layer-circle-about1 position-absolute rounded-circle"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section id="skills-section" class="py-5 py-lg-6 bg-main2" aria-labelledby="skills-title">
+      <div class="container py-4 position-relative">
+        <div class="text-center mb-5 position-relative z-1">
+          <span class="bg-brand navbar-brand-text fs-5 fw-medium d-block mb-2">ما أتقنه</span>
+          <h2 id="skills-title" class="display-5 fw-bold text-white mb-3">
+            المهارات و <span class="bg-brand navbar-brand-text">التقنيات</span>
+          </h2>
+          <div class="section-title-bar bg-brand mx-auto rounded-pill"></div>
+        </div>
+
+        <div class="row g-4 position-relative z-1">
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 proiect-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">React.js</h3>
+                <i class="fa-brands fa-react fs-2 text-primary"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في React.js">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 95%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">خبرة متقدمة في بناء تطبيقات React معقدة</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 years-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">Next.js</h3>
+                <i class="fa-solid fa-n fs-2 text-info"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Next.js">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 90%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">تطوير تطبيقات SSR وSSG متقدمة</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 years-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">TypeScript</h3>
+                <i class="fa-solid fa-code fs-2 text-info"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في TypeScript">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 88%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">كتابة كود آمن ومنظم بشكل احترافي</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 proiect-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">Tailwind CSS</h3>
+                <i class="fa-solid fa-wind fs-2 text-primary"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Tailwind CSS">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 97%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">تصميم واجهات حديثة بسرعة عالية</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 years-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">Node.js</h3>
+                <i class="fa-brands fa-node-js fs-2 text-info"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Node.js">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 85%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">بناء APIs وخدمات الخلفية</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="bg-white bg-opacity-10 rounded-4 p-4 border border-white border-opacity-25 h-100 years-about hover-card-scale">
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <h3 class="text-white fs-4 fw-bold m-0">Figma</h3>
+                <i class="fa-brands fa-figma fs-2 text-info"></i>
+              </div>
+              <div class="progress mb-3" style="height: 10px;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="مستوى المهارة في Figma">
+                <div class="progress-bar progress-bar-brand rounded" style="width: 92%"></div>
+              </div>
+              <p class="text-white text-opacity-50 m-0">تصميم واجهات احترافية ونماذج تفاعلية</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-5 position-relative z-1">
+          <div class="col-6 col-md-3">
+            <div class="bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25 text-center py-4 d-flex flex-column align-items-center">
+              <i class="fa-brands fa-html5 display-5 text-danger mt-1 d-block"></i>
+              <p class="text-white text-opacity-75 fw-medium m-0">HTML5</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25 text-center py-4 d-flex flex-column align-items-center">
+              <i class="fa-brands fa-css3-alt display-5 text-brand2 mt-1 d-block"></i>
+              <p class="text-white text-opacity-75 fw-medium m-0">CSS3</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25 text-center py-4 d-flex flex-column align-items-center">
+              <i class="fa-brands fa-js display-5 text-warning mt-1 d-block"></i>
+              <p class="text-white text-opacity-75 fw-medium m-0">JavaScript</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-white bg-opacity-10 rounded-4 border border-white border-opacity-25 text-center py-4 d-flex flex-column align-items-center">
+              <i class="fa-brands fa-git-alt display-5 text-danger mt-1 d-block"></i>
+              <p class="text-white text-opacity-75 fw-medium m-0">Git</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="layer-section-about layer-circle-about3 position-absolute rounded-circle"></div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PORTFOLIO SECTION
+         ============================================ -->
+    <section id="portfolio" class="py-5 py-lg-6 bg-main" aria-labelledby="portfolio-title">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="text-brand2 fs-5 fw-medium d-block mb-2">أعمالي</span>
+          <h2 id="portfolio-title" class="display-5 fw-bold text-white mb-3">
+            معرض <span class="bg-brand navbar-brand-text">المشاريع</span>
+          </h2>
+          <div class="section-title-bar bg-brand mx-auto rounded-pill"></div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-5" id="portfolio-filters" role="group" aria-label="فلترة المشاريع">
+          <button class="portfolio-filter active btn bg-section text-white fw-semibold rounded-4 py-2 px-4 border border-white border-opacity-10" data-filter="all" aria-pressed="true" type="button">الكل</button>
+          <button class="portfolio-filter btn bg-section text-white fw-semibold rounded-4 py-2 px-4 border border-white border-opacity-10" data-filter="web" aria-pressed="false" type="button">مواقع الويب</button>
+          <button class="portfolio-filter btn bg-section text-white fw-semibold rounded-4 py-2 px-4 border border-white border-opacity-10" data-filter="app" aria-pressed="false" type="button">التطبيقات</button>
+          <button class="portfolio-filter btn bg-section text-white fw-semibold rounded-4 py-2 px-4 border border-white border-opacity-10" data-filter="design" aria-pressed="false" type="button">التصميم</button>
+          <button class="portfolio-filter btn bg-section text-white fw-semibold rounded-4 py-2 px-4 border border-white border-opacity-10" data-filter="ecommerce" aria-pressed="false" type="button">التجارة الإلكترونية</button>
+        </div>
+
+        <div class="row g-4" id="portfolio-grid">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 proiect-about h-100 portfolio-item" data-category="web">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-1-BqicZ04C.webp" alt="متجر إلكتروني متكامل">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-primary bg-opacity-25 text-primary px-3 py-2">موقع ويب</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">متجر إلكتروني متكامل</h3>
+                <p class="text-white text-opacity-50">منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Node.js</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="app">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-2-D0_acfF_.webp" alt="تطبيق إدارة المهام">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تطبيق</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">تطبيق إدارة المهام</h3>
+                <p class="text-white text-opacity-50">تطبيق ويب تفاعلي لإدارة المهام مع ميزات التعاون الجماعي</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Vue.js</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Firebase</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Tailwind</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="design">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-3-uJsBXCgl.webp" alt="موقع شخصي إبداعي">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تصميم</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">موقع شخصي إبداعي</h3>
+                <p class="text-white text-opacity-50">تصميم موقع شخصي بأسلوب عصري وألوان جريئة</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Figma</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">UI/UX</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Prototype</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 proiect-about h-100 portfolio-item" data-category="web">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-4-Czusdp5K.webp" alt="موقع شركة استشارية">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill text-primary bg-primary bg-opacity-25 bg-opacity-25 px-3 py-2">موقع ويب</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">موقع شركة استشارية</h3>
+                <p class="text-white text-opacity-50">موقع احترافي لشركة استشارات مع نظام حجز المواعيد</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Next.js</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">TypeScript</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Prisma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="app">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-5-ChqqtI-W.webp" alt="لوحة تحليلات اجتماعية">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تطبيق</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">لوحة تحليلات اجتماعية</h3>
+                <p class="text-white text-opacity-50">منصة تحليل وإدارة حسابات التواصل الاجتماعي</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Chart.js</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">API</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="ecommerce">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-6-C9bxzsei.webp" alt="متجر أزياء فاخر">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تجارة</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">متجر أزياء فاخر</h3>
+                <p class="text-white text-opacity-50">منصة تسوق راقية للأزياء مع تجربة مستخدم استثنائية</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Next.js</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Stripe</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Sanity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 proiect-about h-100 portfolio-item" data-category="web">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-7-BXDNVwGk.webp" alt="موقع مطعم وتوصيل">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-primary bg-opacity-25 text-primary px-3 py-2">موقع ويب</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon1 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">موقع مطعم وتوصيل</h3>
+                <p class="text-white text-opacity-50">منصة طلب طعام مع نظام توصيل وتتبع الطلبات</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Express</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="app">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-8-BnHB_F_a.webp" alt="تطبيق لياقة بدنية">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تطبيق</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="كود المشروع على GitHub"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">تطبيق لياقة بدنية</h3>
+                <p class="text-white text-opacity-50">تطبيق متكامل لتتبع التمارين والتغذية والتقدم</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React Native</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Redux</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Firebase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-card bg-alfaCard bg-alfaCard rounded-4 overflow-hidden border border-white border-opacity-10 years-about h-100 portfolio-item" data-category="design">
+              <div class="position-relative overflow-hidden" style="height:260px;">
+                <img class="w-100 h-100" style="object-fit:cover;" loading="lazy" src="assets/imgs/portfolio-9-Q6q-wpwU.webp" alt="تصميم تطبيق جوال">
+                <div class="portfolio-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+              </div>
+              <div class="p-4">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <span class="badge rounded-pill bg-info bg-opacity-25 text-info px-3 py-2">تصميم</span>
+                  <div class="d-flex gap-2">
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="معاينة المشروع"><i class="fa-solid fa-eye"></i></a>
+                    <a href="#" class="btn social-icon2 py-2 bg-white bg-opacity-10 text-white rounded-3" aria-label="تصميم المشروع على Figma"><i class="fa-brands fa-figma"></i></a>
+                  </div>
+                </div>
+                <h3 class="text-white fs-4 fw-bold">تصميم تطبيق جوال</h3>
+                <p class="text-white text-opacity-50">تصميم UI/UX كامل لتطبيق جوال متعدد الوظائف</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Figma</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Adobe XD</span>
+                  <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Sketch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#contact" class="btn bg-brand text-fff-icon fw-bold rounded-4 px-5 py-3 hover-card-translatet">
+            <i class="fa-solid fa-rocket me-2"></i> لنبدأ مشروعك القادم
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         EXPERIENCE SECTION
+         ============================================ -->
+    <section id="experience" class="py-5 py-lg-6 bg-main2" aria-labelledby="experience-title">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="text-brand2 fs-5 fw-medium d-block mb-2">مسيرتي المهنية</span>
+          <h2 id="experience-title" class="display-5 fw-bold text-white mb-3">
+            الخبرة <span class="bg-brand navbar-brand-text">العملية</span>
+          </h2>
+          <div class="section-title-bar bg-brand mx-auto rounded-pill"></div>
+        </div>
+
+        <div class="position-relative">
+          <div class="timeline-line d-none d-lg-block position-absolute bg-brand h-100"></div>
+          
+
+          <div class="d-flex flex-column gap-4">
+            <!-- Item 1 -->
+            <div class="row position-relative align-items-center">
+              <div class="timeline-dot d-none d-lg-block position-absolute rounded-circle bg-brand p-0 border border-4 border-black"></div>
+              <div class="col-lg-6">
+                <div class="px-4">
+                  <div class="bg-alfaCard rounded-4 p-4 border border-white border-opacity-10 proiect-about transition5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <span class="badge rounded-3 bg-primary bg-opacity-25 text-brand2 px-3 py-2">2022 - الآن</span>
+                      <i class="fa-solid fa-briefcase fs-3 text-brand2"></i>
+                    </div>
+                    <h3 class="text-white fs-4 fw-bold mb-1">مطور واجهات أمامية أول</h3>
+                    <p class="text-info fs-5 mb-2">شركة التقنية المتقدمة</p>
+                    <p class="text-white text-opacity-50 mb-3">قيادة فريق من 5 مطورين في بناء تطبيقات ويب معقدة باستخدام React و Next.js. تحسين أداء التطبيقات بنسبة 40% وتطوير نظام تصميم شامل.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Next.js</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">TypeScript</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Team Lead</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block"></div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="row position-relative align-items-center">
+              <div class="timeline-dot d-none d-lg-block position-absolute rounded-circle bg-brand p-0 border border-4 border-black"></div>
+              <div class="col-lg-6 d-none d-lg-block"></div>
+              <div class="col-lg-6">
+                <div class="px-4">
+                  <div class="bg-alfaCard rounded-4 p-4 border border-white border-opacity-10 years-about transition5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <i class="fa-solid fa-laptop-code fs-3 text-info"></i>
+                      <span class="badge rounded-3 bg-info bg-opacity-25 text-info px-3 py-2">2020 - 2022</span>
+                    </div>
+                    <h3 class="text-white fs-4 fw-bold mb-1">مطور Full Stack</h3>
+                    <p class="text-info fs-5 mb-2">استوديو الإبداع الرقمي</p>
+                    <p class="text-white text-opacity-50 mb-3">تطوير أكثر من 25 موقع ويب وتطبيق للعملاء. العمل على مشاريع متنوعة من التجارة الإلكترونية إلى المنصات التعليمية باستخدام MERN Stack.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">MongoDB</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Express</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">React</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Node.js</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="row position-relative align-items-center">
+              <div class="timeline-dot d-none d-lg-block position-absolute rounded-circle bg-brand p-0 border border-4 border-black"></div>
+              <div class="col-lg-6">
+                <div class="px-4">
+                  <div class="bg-alfaCard rounded-4 p-4 border border-white border-opacity-10 years-about transition5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <span class="badge rounded-3 bg-info bg-opacity-25 text-info px-3 py-2">2019 - 2020</span>
+                      <i class="fa-solid fa-code fs-3 text-info"></i>
+                    </div>
+                    <h3 class="text-white fs-4 fw-bold mb-1">مطور واجهات أمامية</h3>
+                    <p class="text-info fs-5 mb-2">وكالة التسويق الرقمي</p>
+                    <p class="text-white text-opacity-50 mb-3">تطوير واجهات مستخدم تفاعلية ومتجاوبة لحملات تسويقية متعددة. التعاون مع فريق التصميم لتحويل النماذج إلى تطبيقات عملية.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">HTML/CSS</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">JavaScript</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">jQuery</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 d-none d-lg-block"></div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="row position-relative align-items-center">
+              <div class="timeline-dot d-none d-lg-block position-absolute rounded-circle bg-brand p-0 border border-4 border-black"></div>
+              <div class="col-lg-6 d-none d-lg-block"></div>
+              <div class="col-lg-6">
+                <div class="px-4">
+                    <div class="bg-alfaCard rounded-4 p-4 border border-white border-opacity-10 proiect-about transition5">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                      <i class="fa-solid fa-graduation-cap fs-3 text-brand2"></i>
+                      <span class="badge rounded-3 bg-primary bg-opacity-10 text-primary px-3 py-2">2018 - 2019</span>
+                    </div>
+                    <h3 class="text-white fs-4 fw-bold mb-1">متدرب تطوير ويب</h3>
+                    <p class="text-primary fs-5 mb-2">شركة البرمجيات الذكية</p>
+                    <p class="text-white text-opacity-50 mb-3">برنامج تدريبي مكثف لمدة عام في تطوير الويب. تعلم أساسيات البرمجة وأفضل الممارسات والعمل على مشاريع حقيقية تحت إشراف مطورين محترفين.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Git</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">APIs</span>
+                      <span class="bg-white bg-opacity-10 text-white-50 rounded-3 px-2 py-1 small">Responsive Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-3 px-2">
+          <div class="col-md-4">
+            <div class="px-3">
+              <div class="bg-section rounded-4 border border-white border-opacity-10 text-center p-4 h-100">
+                <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:64px;height:64px;">
+                  <i class="fa-solid fa-award fs-3 text-fff-icon"></i>
+                </div>
+                <h3 class="text-white fs-4 fw-bold mb-2">شهادات معتمدة</h3>
+                <p class="text-white text-opacity-50 m-0">AWS Certified Developer<br>Google UX Design Professional</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="px-3">
+              <div class="bg-section rounded-4 border border-white border-opacity-10 text-center p-4 h-100">
+                <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:64px;height:64px;">
+                  <i class="fa-solid fa-users fs-3 text-fff-icon"></i>
+                </div>
+                <h3 class="text-white fs-4 fw-bold mb-2">فرق العمل</h3>
+                <p class="text-white text-opacity-50 m-0">خبرة في العمل مع فرق متعددة<br>التخصصات والثقافات</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="px-3">
+              <div class="bg-section rounded-4 border border-white border-opacity-10 text-center p-4 h-100">
+                <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:64px;height:64px;">
+                  <i class="fa-solid fa-lightbulb fs-3 text-fff-icon"></i>
+                </div>
+                <h3 class="text-white fs-4 fw-bold mb-2">الابتكار</h3>
+                <p class="text-white text-opacity-50 m-0">دائماً أبحث عن طرق جديدة<br>لحل المشاكل التقنية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         TESTIMONIALS SECTION
+         ============================================ -->
+    <section id="testimonials" class="py-5 py-lg-6 bg-main" aria-labelledby="testimonials-title">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="bg-brand navbar-brand-text fs-5 fw-medium d-block mb-2">آراء العملاء</span>
+          <h2 id="testimonials-title" class="display-5 fw-bold text-white mb-3">
+            ماذا يقول <span class="bg-brand navbar-brand-text">العملاء</span>
+          </h2>
+          <div class="section-title-bar bg-brand mx-auto rounded-pill"></div>
+        </div>
+
+        <div id="testimonialsCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-touch="true">
+          <div class="carousel-inner px-4 px-lg-5">
+
+            <div class="carousel-item active px-3">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 proiect-about h-100">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-1-BQH9KX0X.webp" alt="صورة أحمد السعيد" class="rounded-circle border border-3 border-color1" 
+                        style="width:64px;height:64px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">أحمد السعيد</h4>
+                        <p class="text-white text-opacity-50 small m-0">مدير شركة التقنية الحديثة</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في التصميم والأداء."</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-2-CyFiVXIH.webp" alt="صورة سيف أسامة" class="rounded-circle border border-3 border-color"
+                        style="width:56px;height:56px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">سيف أسامة</h4>
+                        <p class="text-white text-opacity-50 small m-0">ميديا باير</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-3-CmoFRkys.webp" alt="صورة خالد صلاح" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">خالد صلاح</h4>
+                        <p class="text-white text-opacity-50 small m-0">مدير تطوير الأعمال</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"شغل محترفين بجد ومواعيد مظبوطة. التطبيق اللي عمله لنا شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item px-3">
+              <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 proiect-about h-100 hover-card">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-4-CI2X8fvY.webp" alt="صورة أحمد الرفاعي" class="rounded-circle border border-3 border-color1" style="width:56px;height:56px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">أحمد الرفاعي</h4>
+                        <p class="text-white text-opacity-50 small m-0">جرافيك ديزاينر</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"تجربة ممتازة من الأول للآخر. أحمد سمع طلباتنا كويس وقدم أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-5-BF_5vAuR.webp" alt="صورة عمر عادل" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">عمر عادل</h4>
+                        <p class="text-white text-opacity-50 small m-0">مؤسس شركة ناشئة</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان ممتاز عشان نجذب مستثمرين. شطارة تقنية وإبداع ملوش حل."</p>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                    <div class="d-flex align-items-center mb-4 gap-3">
+                      <img src="assets/imgs/avatar-6-IIG--UcM.webp" alt="صورة كريم ياسر" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                      <div>
+                        <h4 class="text-white fs-5 fw-bold m-0">كريم ياسر</h4>
+                        <p class="text-white text-opacity-50 small m-0">دكتور صيدلي</p>
+                      </div>
+                    </div>
+                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-white text-opacity-75 m-0">"الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات وبيرد بسرعة على أي تعديل. النتيجة النهائية أحسن من اللي كنا متخيلينه."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+              <i class="fas fa-angle-left fs-5"></i>
+            </span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
+              <i class="fas fa-angle-right fs-5"></i>
+            </span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+          <div class="carousel-indicators position-relative mt-4" style="bottom:auto; direction: ltr;">
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active bg-brand" aria-current="true" aria-label="مجموعة 1"></button>
+            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" class="bg-brand" aria-label="مجموعة 2"></button>
+          </div>
+        </div>
+
+        <div class="bg-brand rounded-4 p-2">
+          <div class="bg-main2 rounded-4 p-5 text-center">
+            <h3 class="text-white fs-2 fw-bold mb-3">جاهز تبدأ مشروعك؟</h3>
+            <p class="text-white text-opacity-75 fs-5 mb-4">يلا نشتغل سوا عشان نحول أفكارك لواقع مبهر</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="#contact" class="btn btn-testimonials  bg-brand text-fff-icon fw-bold rounded-4 px-4 py-3">تواصل معي الآن</a>
+              <a id="btn-black-color" href="#portfolio" class="btn btn-outline-light border-2 fw-bold rounded-4 px-4 py-3">شاهد المزيد من الأعمال</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         STATISTICS SECTION
+         ============================================ -->
+    <section id="statistics-section" class="py-5 py-lg-6 bg-main2">
+      <div class="container py-4">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:90px;height:90px;">
+              <i class="fa-solid fa-diagram-project fs-2 text-fff-icon"></i>
+            </div>
+            <div class="text-brand2 display-6 fw-bold">50+</div>
+            <p class="text-white text-opacity-50 fs-5">مشروع مكتمل</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:90px;height:90px;">
+              <i class="fa-solid fa-users fs-2 text-fff-icon"></i>
+            </div>
+            <div class="text-brand2 display-6 fw-bold">35+</div>
+            <p class="text-white text-opacity-50 fs-5">عميل سعيد</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:90px;height:90px;">
+              <i class="fa-solid fa-clock fs-2 text-fff-icon"></i>
+            </div>
+            <div class="text-brand2 display-6 fw-bold">8+</div>
+            <p class="text-white text-opacity-50 fs-5">سنوات خبرة</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center mx-auto mb-3" style="width:90px;height:90px;">
+              <i class="fa-solid fa-trophy fs-2 text-fff-icon"></i>
+            </div>
+            <div class="text-brand2 display-6 fw-bold">12+</div>
+            <p class="text-white text-opacity-50 fs-5">جائزة وتقدير</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact" class="py-5 py-lg-6 bg-main" aria-labelledby="contact-title">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="bg-brand navbar-brand-text fs-5 fw-medium d-block mb-2">تواصل معي</span>
+          <h2 id="contact-title" class="display-5 fw-bold text-white mb-3">
+            يلا نبدأ <span class="bg-brand navbar-brand-text">مشروعك</span>
+          </h2>
+          <div class="section-title-bar bg-brand mx-auto rounded-pill mb-3"></div>
+          <p class="text-white text-opacity-75 fs-5">عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع</p>
+        </div>
+
+        <div class="row g-5">
+          <!-- Contact Info -->
+          <div class="col-lg-6 d-flex flex-column gap-3">
+            <a href="mailto:ahmed@example.com" class="bg-alfaCard hover-card-translatet rounded-4 p-4 border border-white border-opacity-10 proiect-about text-decoration-none">
+              <div class="d-flex align-items-center gap-4">
+                <div class="bg-brand contact-icon rounded-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-envelope fs-3 text-fff-icon"></i>
+                </div>
+                <div>
+                  <h3 class="text-white text-opacity-50 fs-6 fw-bold mb-1">البريد الإلكتروني</h3>
+                  <p class="text-white fs-5 fw-bold mb-1" dir="ltr">amr@example.com</p>
+                  <p class="text-white text-opacity-50 small m-0">جاهز للرد خلال 24 ساعة</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="tel:+201030666895" class="bg-alfaCard hover-card-translatet rounded-4 p-4 border border-white border-opacity-10 years-about text-decoration-none">
+              <div class="d-flex align-items-center gap-4">
+                <div class="bg-brand contact-icon rounded-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-phone fs-3 text-fff-icon"></i>
+                </div>
+                <div>
+                  <h3 class="text-white text-opacity-50 fs-6 fw-bold mb-1">رقم الهاتف</h3>
+                  <p class="text-white fs-5 fw-bold mb-1" dir="ltr">+20 10 3066 689</p>
+                  <p class="text-white text-opacity-50 small m-0">متاح من 9 صباحاً - 5 مساءً</p>
+                </div>
+              </div>
+            </a>
+
+            <div class="bg-alfaCard rounded-4 p-4 border border-white border-opacity-10 years-about">
+              <div class="d-flex align-items-center gap-4">
+                <div class="bg-brand rounded-4 d-flex align-items-center justify-content-center flex-shrink-0" style="width:60px;height:60px;">
+                  <i class="fa-solid fa-location-dot fs-3 text-fff-icon"></i>
+                </div>
+                <div>
+                  <h3 class="text-white text-opacity-50 fs-6 fw-bold mb-1">الموقع</h3>
+                  <p class="text-white fs-5 fw-bold mb-1">القاهرة، مصر</p>
+                  <p class="text-white text-opacity-50 small m-0">متاح للعمل عن بعد</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-brand rounded-4 p-2 mt-2">
+              <div class="bg-main2 rounded-4 p-4 text-center">
+                <h3 class="text-white fs-4 fw-bold mb-3">تابعني على</h3>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                  <a href="#" class="social-icon-btn bg-section border border-white border-opacity-10 hover-card-scale rounded-3 d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="GitHub"><i class="fa-brands fa-github fs-5"></i></a>
+                  <a href="#" class="social-icon-btn bg-section border border-white border-opacity-10 hover-card-scale rounded-3 d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fs-5"></i></a>
+                  <a href="#" class="social-icon-btn bg-section border border-white border-opacity-10 hover-card-scale rounded-3 d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="Twitter"><i class="fa-brands fa-twitter fs-5"></i></a>
+                  <a href="#" class="social-icon-btn bg-section border border-white border-opacity-10 hover-card-scale rounded-3 d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="Dribbble"><i class="fa-brands fa-dribbble fs-5"></i></a>
+                  <a href="#" class="social-icon-btn bg-section border border-white border-opacity-10 hover-card-scale rounded-3 d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="Behance"><i class="fa-brands fa-behance fs-5"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-6">
+            <div class="bg-alfaCard rounded-4 p-4 p-md-5 border border-white border-opacity-10">
+              <form class="d-flex flex-column gap-3" aria-label="نموذج التواصل">
+                <div>
+                  <label for="full-name" class="form-label text-white fs-6">الاسم الكامل</label>
+                  <input type="text" id="full-name" name="full-name" autocomplete="name" required
+                    class="form-control form-control-custom rounded-3 py-3 px-3" placeholder="أدخل اسمك الكامل">
+                </div>
+                <div>
+                  <label for="email" class="form-label text-white fs-6">البريد الإلكتروني</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required
+                    class="form-control form-control-custom rounded-3 py-3 px-3" placeholder="example@email.com">
+                </div>
+                <div>
+                  <label for="phone" class="form-label text-white fs-6">رقم الهاتف</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel"
+                    class="form-control form-control-custom rounded-3 py-3 px-3" placeholder="+20 10 XXXX XXXX">
+                </div>
+                <div>
+                  <label for="project-type" class="form-label text-white fs-6">نوع المشروع</label>
+                  <select id="project-type" name="project-type" class="form-select form-control-custom rounded-3 py-3 px-3">
+                    <option selected disabled>اختر نوع المشروع</option>
+                    <option value="موقع ويب">موقع ويب</option>
+                    <option value="تطبيق ويب">تطبيق ويب</option>
+                    <option value="تطبيق جوال">تطبيق جوال</option>
+                    <option value="تصميم UI/UX">تصميم UI/UX</option>
+                    <option value="استشارة تقنية">استشارة تقنية</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="budget" class="form-label text-white fs-6">الميزانية المتوقعة</label>
+                  <select id="budget" name="budget" class="form-select form-control-custom rounded-3 py-3 px-3">
+                    <option selected disabled>اختر الميزانية</option>
+                    <option value="أقل من 20,000 جنيه">أقل من 20,000 جنيه</option>
+                    <option value="20,000 - 50,000 جنيه">20,000 - 50,000 جنيه</option>
+                    <option value="50,000 - 100,000 جنيه">50,000 - 100,000 جنيه</option>
+                    <option value="أكثر من 100,000 جنيه">أكثر من 100,000 جنيه</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="project-details" class="form-label text-white fs-6">تفاصيل المشروع</label>
+                  <textarea id="project-details" name="project-details" rows="5" required
+                    class="form-control form-control-custom rounded-3 py-3 px-3" placeholder="احكيلي تفاصيل مشروعك..."></textarea>
+                </div>
+                <button type="submit" class="btn bg-brand text-fff-icon fw-bold rounded-3 py-3 fs-5 hover-card-scale">
+                  <i class="fa-solid fa-paper-plane me-2"></i> ابعت الرسالة
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer id="footer" role="contentinfo" class="bg-nav border-top border-white border-opacity-10 py-5">
+      <div class="container">
+        <div class="row g-5 mb-4">
+          <div class="col-md-6 col-lg-5">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="bg-brand rounded-3 d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+                <i class="fa-solid fa-code text-fff-icon fs-5"></i>
+              </div>
+              <div class="bg-brand navbar-brand-text fs-3 fw-bold">عمرو خالد</div>
+            </div>
+            <p class="text-white text-opacity-50 fs-5 mb-4">
+              أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم سلسة بتسيب أثر. بدمج التصميم الجمالي مع الأداء القوي عشان أقدم منتج نهائي متكامل.
+            </p>
+            <a href="#" class="cv-footer bg-section border border-white border-opacity-10 proiect-about rounded-4 p-3 d-flex align-items-center gap-3 hover-card-translatet text-decoration-none mb-3" style="max-width:340px;">
+              <div class="cv-footer-icon bg-primary bg-opacity-10 text-brand2 rounded-3 d-flex align-items-center justify-content-center flex-shrink-0" style="width:48px;height:48px;">
+                <i class="fa-solid fa-file-arrow-down fs-5"></i>
+              </div>
+              <div>
+                <span class="d-block text-white text-opacity-50 small">تعرف على خبراتي</span>
+                <span class="d-block text-white fw-bold">حمل السيرة الذاتية (CV)</span>
+              </div>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+              <span class="circle-plus-div rounded-circle bg-success" style="width:10px;height:10px;"></span>
+              <p class="text-white text-opacity-50 small m-0">
+                أعمل حالياً على: <span class="text-white fw-bold">مشروع SaaS لإدارة الفريق</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <h3 class="text-white fs-4 fw-bold mb-4">روابط سريعة</h3>
+            <ul class="list-unstyled d-flex flex-column gap-2 p-0">
+              <li><a href="#hero-section" class="footer-link">الرئيسية</a></li>
+              <li><a href="#about" class="footer-link">عني</a></li>
+              <li><a href="#portfolio" class="footer-link">الأعمال</a></li>
+              <li><a href="#experience" class="footer-link">الخبرة</a></li>
+              <li><a href="#testimonials" class="footer-link">التوصيات</a></li>
+              <li><a href="#contact" class="footer-link">تواصل</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-4">
+            <h3 class="text-white fs-4 fw-bold mb-4 p-0">الخدمات</h3>
+            <ul class="list-unstyled d-flex flex-column p-0 gap-2">
+              <li><a href="#" class="footer-link">تطوير الويب</a></li>
+              <li><a href="#" class="footer-link">تطوير التطبيقات</a></li>
+              <li><a href="#" class="footer-link">تصميم UI/UX</a></li>
+              <li><a href="#" class="footer-link">الاستشارات التقنية</a></li>
+              <li><a href="#" class="footer-link">تحسين الأداء</a></li>
+              <li><a href="#" class="footer-link">الصيانة والدعم</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-top border-white border-opacity-10 pt-4 d-flex justify-content-center justify-content-lg-start">
+          <p class="text-white text-opacity-50 m-0">&copy; 2025 أحمد حسن. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <!-- <button id="scroll-to-top"
+    class="fixed left-8 bottom-8 bg-gradient-to-tr from-primary to-accent hover:from-secondary hover:to-primary text-white w-14 h-14 rounded-full shadow-lg hover:shadow-2xl hover:shadow-primary/50 flex items-center justify-center transition-all duration-300 opacity-0 invisible z-50 hover:scale-110 group"
+    aria-label="العودة للأعلى" type="button">
+    <i class="fa-solid fa-rocket text-2xl transform -rotate-45 group-hover:translate-y-[-3px] transition-transform duration-300"
+      aria-hidden="true"></i>
+  </button> -->
+
+
+  <!-- Settings Sidebar -->
+  <div id="settings-sidebar" class="position-fixed top-0 bottom-0 start-100 bg-main text-white"
+    role="dialog" aria-label="لوحة تخصيص المظهر">
+
+    <!-- Settings Toggle Button -->
+    <button id="settings-toggle"
+      class="bg-alfaCard border border-white border-opacity-10 rounded-start-3 settings-toggle-btn transition5 shadow"
+      aria-label="تخصيص المظهر" aria-expanded="false" aria-controls="settings-sidebar" type="button"
+      style="position: absolute;">
+      <i class="fa-solid fa-gear text-white-50 group-hover:rotate-90 transition-transform duration-500"></i>
+    </button>
+
+    <!-- Sidebar Content -->
+    <div class="d-flex flex-column justify-content-between h-100">
+      <!-- Header -->
+      <div class="border-bottom border-white border-opacity-10 py-4 d-flex justify-content-around align-items-center">
+        <h4 class="h5 fs-media-mobile gap-2">
+          <i class="fa-solid fa-sliders text-primary" aria-hidden="true"></i>
+          تخصيص المظهر
+        </h3>
+        <button id="close-settings"
+          class="btn-xmark border-0 rounded-circle d-flex justify-content-center align-items-center"
+          aria-label="إغلاق لوحة التخصيص" type="button">
+          <i class="fa-solid fa-xmark text-white-50 small fs-media-mobile" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Scrollable Content -->
+      <div class="overflow-y-auto overflow-x-hidden h-100">
+        <!-- Fonts Section -->
+        <div class="p-1 p-md-4 border-bottom border-white border-opacity-10">
+          <h4
+            class="fs-6 fs-media-mobile mb-4 fw-bold text-white-50 gap-2">
+            <i class="fa-solid fa-font text-xs" aria-hidden="true"></i>
+            نوع الخط
+          </h4>
+          <div class="d-flex flex-column gap-3" role="radiogroup" aria-label="اختيار نوع الخط">
+            <button class="font-sec-btn bg-transparent border border-white border-opacity-10 proiect-about transition5 rounded-4 d-flex align-items-center justify-content-between"
+              data-font="alexandria" role="radio" aria-checked="false" type="button">
+              <div class="d-flex flex-column align-items-start">
+                <p class="p-Alex m-1 fw-bold fs-4 fs-media-mobile text-white transition5 me-2">Alexandria</p>
+                <p class="m-0 fw-bold  text-white-50 me-2 fs-media-mobile-5" style="font-size: .75rem;">Alexandria</p>
+              </div>
+              <div
+                class="text-brand2 fs-5 fs-media-mobile"
+                aria-hidden="true">
+                <i class="fa-solid fa-check-circle d-none ms-md-2"></i>
+              </div>
+            </button>
+
+            <button class="active font-sec-btn bg-transparent border border-white border-opacity-10 proiect-about transition5 rounded-4 d-flex align-items-center justify-content-between"
+              data-font="alexandria" role="radio" aria-checked="false" type="button">
+              <div class="d-flex flex-column align-items-start">
+                <p class="p-Alex m-1 fw-bold fs-4 fs-media-mobile text-white transition5 me-2">Tajawal</p>
+                <p class="m-0 fw-bold  text-white-50 me-1 me-md-2 fs-media-mobile-4" style="font-size: .60rem;">الخط الافتراضي</p>
+              </div>
+              <div
+                class="text-brand2 fs-5 fs-media-mobile"
+                aria-hidden="true">
+                <i class="fa-solid fa-check-circle d-block ms-md-2"></i>
+              </div>
+            </button>
+
+            <button class="font-sec-btn bg-transparent border border-white border-opacity-10 proiect-about transition5 rounded-4 d-flex align-items-center justify-content-between"
+              data-font="alexandria" role="radio" aria-checked="false" type="button">
+              <div class="d-flex flex-column align-items-start">
+                <p class="p-Alex m-1 fw-bold fs-4 fs-media-mobile text-white transition5 me-2">Cairo</p>
+                <p class="m-0 fw-bold  text-white-50 me-2 fs-media-mobile-5" style="font-size: .75rem;">Cairo</p>
+              </div>
+              <div
+                class="text-brand2 fs-5 fs-media-mobile"
+                aria-hidden="true">
+                <i class="fa-solid fa-check-circle d-none ms-md-2"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Colors Section -->
+        <div>
+          <h4
+            class="py-3 py-md-4 fs-media-mobile">
+            <i class="fa-solid fa-palette" aria-hidden="true"></i>
+            لون الثيم
+          </h4>
+          <div class="row py-2 g-3 w-100" id="theme-colors-grid" aria-label="اختيار لون الثيم">
+            <div class="col-3">
+              <div class="change-theme bg-brand5 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm outline-color" style="width: 53px;height: 53px;"></div>
+            </div>
+            <div class="col-3">
+              <div class="change-theme bg-brand0 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
+            </div>
+            <div class="col-3">
+              <div class="change-theme bg-brand1 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
+            </div>
+            <div class="col-3">
+              <div class="change-theme bg-brand2 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
+            </div>
+            <div class="col-3">
+              <div class="change-theme bg-brand3 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
+            </div>
+            <div class="col-3">
+              <div class="change-theme bg-brand4 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="bg-black border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
+        <button id="reset-settings"
+          class="w-100 py-3 px-4 fw-semibold rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-red-500 hover:text-white dark:hover:bg-red-600 transition-all flex items-center justify-center gap-2"
+          type="button">
+          <i class="fa-solid fa-rotate-right" aria-hidden="true"></i>
+          إعادة الضبط
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

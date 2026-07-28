@@ -1,0 +1,150 @@
+
+@media screen and (max-width: 575px) {
+    #hero-section h1 {
+        font-size: 2.1rem;
+    }
+    .terminal-card .font-monospace {
+        font-size: .75rem;
+    }
+    .btn-xmark {
+        width: 20px;
+        height: 20px;
+    }
+    #settings-toggle {
+        width: 40px;
+        height: 40px;
+    }
+    #settings-sidebar {
+        width: 80% !important;
+    }
+
+    .w-13px-mobile {
+        width: 13px !important;
+    }
+    .w-30px-mobile {
+        width: 30px !important;
+    }
+    .h-30px-mobile {
+        height: 30px !important;
+    }
+
+    .fs-media-mobile {
+        font-size: .75rem !important;
+    }
+    .fs-media-mobile-5 {
+        font-size: .5rem !important;
+    }
+    .fs-media-mobile-4 {
+        font-size: .4rem !important;
+    }
+
+}
+@media screen and (max-width:992px) {
+    .w-media-100-sm {
+        width: 100% !important;
+    }
+    .w-media-50px-sm {
+        width: 50px !important;
+    }
+    .w-media-45px-sm {
+        width: 45px !important;
+    }
+    .w-media-40px-sm {
+        width: 40px !important;
+    }
+    .h-media-50px-sm {
+        height: 50px;
+    }
+    .h-media-45px-sm {
+        height: 45px;
+    }
+
+    .fs-media-min-sm {
+        font-size: .75rem !important;
+    }
+
+
+
+
+
+
+    .navbar-brand div {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+    .nav-item .active::after {
+        width: 3px;
+        height: 80%;
+        right: 0%;
+        bottom: 10%;
+    }
+    .header-img img {
+        width: 240px;
+        height: 240px;
+    }
+    #settings-sidebar {
+        width: 40%;
+    }
+}
+@media screen and (min-width:993px) {
+    .w-media-60px-lg {
+        width: 60px !important;
+    }
+    .w-media-50px-lg {
+        width: 50px !important;
+    }
+    .w-media-25 {
+        width: 25% !important;
+    }
+    .h-media-60px-lg {
+        height: 60px;
+    }
+
+    .header-img {
+        width: 320px;
+        height: 320px;
+    }
+    .header-img img {
+        width: 310px;
+        height: 310px;
+        position: absolute;
+        left: 55%;
+    }
+    .circle-element-design {
+        width: 410px;
+        height: 410px;
+    }
+    .icon-anmtion-4 {
+        right: -55%;
+        bottom: 10%;
+    }
+    .icon-anmtion-3 {
+        right: -52%;
+    }
+    .icon-anmtion-2,
+    .icon-anmtion-1  {
+        left: 46%;
+    }
+}
+
+
+
+/* ============================================
+   ADDED RESPONSIVE TWEAKS
+   ============================================ */
+
+@media screen and (max-width: 767px) {
+    #hero-section h1 {
+        font-size: 2.75rem;
+    }
+    .display-5 {
+        font-size: 1.9rem;
+    }
+    .scroll-top-btn {
+        width: 42px;
+        height: 42px;
+        bottom: 16px;
+        left: 16px;
+    }
+}
