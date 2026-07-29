@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar" class="dark">
+<html dir="rtl" lang="ar" class="dark overflow-x-hidden">
 
 <head>
   <!-- Essential Meta Tags (must be first) -->
@@ -74,11 +74,12 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarOffcanvas" data-bs-smooth-scroll="true" tabindex="0" class="font-family-main-Tajawal  overflow-x-hidden">
+<body data-bs-spy="scroll" data-bs-target="#navbarOffcanvas" data-bs-smooth-scroll="true" tabindex="0" class="font-family-main-Tajawal">
   <!-- Skip to Content Link for Accessibility -->
   <!-- <a
       href="#main-content"
-      class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+      class="position-fixed skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:right-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg"
+      style="bottom: 10%;left: 10%;"
     >
       تخطي إلى المحتوى الرئيسي
     </a> -->
@@ -144,10 +145,10 @@
           <div class="col-lg-6 my-5 py-lg-5" dir="rtl">
             <div class="m-0 mt-lg-5">
               <div class="d-flex justify-content-center align-items-center position-relative">
-                <div class="circle-element-design position-absolute rounded-circle border-color1 d-flex justify-content-center align-items-center">
+                <div class="circle-element-design position-absolute rounded-circle bg-border-color d-flex justify-content-center align-items-center">
                 </div>
                 <div class="header-img d-flex justify-content-center align-items-center position-relative rounded-circle border border-2 border-color">
-                  <img src="assets/imgs/hero-section-img-Dsy3Av-w.webp" class="rounded-circle border border-color" alt="hero section img">
+                  <img src="assets/imgs/hero-section-img-Dsy3Av-w.webp" class="rounded-circle border bg-border-color" alt="hero section img">
                   <div class="icon-anmtion-1 bg-section d-flex justify-content-center align-items-center rounded-4
                       border border-white border-opacity-50 position-absolute w-media-60px-lg w-media-50px-sm h-media-60px-lg h-media-50px-sm">
                     <i class="fas fa-code fs-2 text-primary"></i>
@@ -1342,16 +1343,17 @@
   </main>
 
   <!-- Scroll to Top Button -->
-  <!-- <button id="scroll-to-top"
-    class="fixed left-8 bottom-8 bg-gradient-to-tr from-primary to-accent hover:from-secondary hover:to-primary text-white w-14 h-14 rounded-full shadow-lg hover:shadow-2xl hover:shadow-primary/50 flex items-center justify-center transition-all duration-300 opacity-0 invisible z-50 hover:scale-110 group"
+  <a href="#hero-section" id="scroll-to-top"
+    class="position-fixed z-3 d-none d-md-flex rounded-circle border-0 bg-brand hover-color-scale2 text-fff-icon justify-content-center align-items-center text-decoration-none"
+    style="bottom: 10%;left: 8%;width: 50px;height: 50px;"
     aria-label="العودة للأعلى" type="button">
-    <i class="fa-solid fa-rocket text-2xl transform -rotate-45 group-hover:translate-y-[-3px] transition-transform duration-300"
+    <i class="fa-solid fa-rocket fs-5"
       aria-hidden="true"></i>
-  </button> -->
+  </a>
 
 
   <!-- Settings Sidebar -->
-  <div id="settings-sidebar" class="position-fixed top-0 bottom-0 start-100 bg-main text-white"
+  <div id="settings-sidebar" class="position-fixed top-0 bottom-0 end-0 bg-main text-white"
     role="dialog" aria-label="لوحة تخصيص المظهر">
 
     <button id="settings-toggle"

@@ -1,5 +1,5 @@
 // ^ Write your JavaScript code here
-
+var heroSection = document.getElementById("hero-section")
 var settingsSidebar = document.getElementById("settings-sidebar")
 var closeSettings = document.getElementById("close-settings")
 var btnColorPage = document.getElementById("btn-color-page")
@@ -12,6 +12,20 @@ var nextbtn = document.getElementById("next-testimonial")
 var prevbtn = document.getElementById("prev-testimonial")
 var sizeCard = document.querySelector(".testimonial-card").offsetWidth
 var carouselBtn = document.querySelectorAll(".carousel-indicator")
+var scrollToTop = document.getElementById("scroll-to-top")
+
+
+
+scrollToTop.classList.remove("d-md-flex")
+window.addEventListener('scroll', () => {
+    const heroBottom = heroSection.offsetHeight / 2;
+
+    if(window.scrollY < heroBottom) {
+        scrollToTop.classList.remove("d-md-flex")
+    }else {
+        scrollToTop.classList.add("d-md-flex")
+    }
+});
 
 
 
@@ -157,12 +171,15 @@ filterButtons.forEach(function (button) {
 
 /* Settings Sidebar btn open\close */
  
+
+settingsSidebar.style.transform=`translateX(${settingsSidebar.offsetWidth}px)`
+
 settingsSidebar.addEventListener("click",function () {
-    settingsSidebar.classList.replace("start-100","end-0");
+    settingsSidebar.style.transform=`translateX(0px)`
 })
 closeSettings.addEventListener("click",function (e) {
     e.stopPropagation();
-    settingsSidebar.classList.replace("end-0","start-100");
+    settingsSidebar.style.transform=`translateX(${settingsSidebar.offsetWidth}px)`
 })
 
 
