@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar" class="dark">
+<html dir="rtl" lang="ar" class="dark overflow-x-hidden">
 
 <head>
   <!-- Essential Meta Tags (must be first) -->
@@ -1290,7 +1290,6 @@
   <div id="settings-sidebar" class="position-fixed top-0 bottom-0 start-100 bg-main text-white"
     role="dialog" aria-label="لوحة تخصيص المظهر">
 
-    <!-- Settings Toggle Button -->
     <button id="settings-toggle"
       class="bg-alfaCard border border-white border-opacity-10 rounded-start-3 settings-toggle-btn transition5 shadow"
       aria-label="تخصيص المظهر" aria-expanded="false" aria-controls="settings-sidebar" type="button"
@@ -1298,9 +1297,7 @@
       <i class="fa-solid fa-gear text-white-50 group-hover:rotate-90 transition-transform duration-500"></i>
     </button>
 
-    <!-- Sidebar Content -->
     <div class="d-flex flex-column justify-content-between h-100">
-      <!-- Header -->
       <div class="border-bottom border-white border-opacity-10 py-4 d-flex justify-content-around align-items-center">
         <h4 class="h5 fs-media-mobile gap-2">
           <i class="fa-solid fa-sliders text-primary" aria-hidden="true"></i>
@@ -1313,10 +1310,8 @@
         </button>
       </div>
 
-      <!-- Scrollable Content -->
       <div class="overflow-y-auto overflow-x-hidden h-100">
-        <!-- Fonts Section -->
-        <div class="p-1 p-md-4 border-bottom border-white border-opacity-10">
+        <div class="p-3 p-md-4 border-bottom border-white border-opacity-10">
           <h4
             class="fs-6 fs-media-mobile mb-4 fw-bold text-white-50 gap-2">
             <i class="fa-solid fa-font text-xs" aria-hidden="true"></i>
@@ -1364,7 +1359,6 @@
           </div>
         </div>
 
-        <!-- Colors Section -->
         <div>
           <h4
             class="py-3 py-md-4 fs-media-mobile">
@@ -1372,29 +1366,28 @@
             لون الثيم
           </h4>
           <div class="row py-2 g-3 w-100" id="theme-colors-grid" aria-label="اختيار لون الثيم">
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand5 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm outline-color" style="width: 53px;height: 53px;"></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand0 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand1 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand2 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand3 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
             </div>
-            <div class="col-3">
+            <div class="col-3 d-flex justify-content-center align-items-center">
               <div class="change-theme bg-brand4 rounded-circle hover-color-scale2 w-30px-mobile h-30px-mobile w-media-45px-sm h-media-45px-sm" style="width: 53px;height: 53px;"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="bg-black border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
         <button id="reset-settings"
           class="w-100 py-3 px-4 fw-semibold rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-red-500 hover:text-white dark:hover:bg-red-600 transition-all flex items-center justify-center gap-2"
