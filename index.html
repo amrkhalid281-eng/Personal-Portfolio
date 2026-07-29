@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar" class="dark overflow-x-hidden">
+<html dir="rtl" lang="ar" class="dark">
 
 <head>
   <!-- Essential Meta Tags (must be first) -->
@@ -74,7 +74,7 @@
 
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarOffcanvas" data-bs-smooth-scroll="true" tabindex="0" class="font-family-main-Tajawal">
+<body data-bs-spy="scroll" data-bs-target="#navbarOffcanvas" data-bs-smooth-scroll="true" tabindex="0" class="font-family-main-Tajawal  overflow-x-hidden">
   <!-- Skip to Content Link for Accessibility -->
   <!-- <a
       href="#main-content"
@@ -912,128 +912,192 @@
           <div class="section-title-bar bg-brand mx-auto rounded-pill"></div>
         </div>
 
-        <div id="testimonialsCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-touch="true">
-          <div class="carousel-inner px-4 px-lg-5">
+        <!-- Testimonials Carousel -->
+        <div class="position-relative bg-black">
+          <!-- Carousel Container -->
+          <div class="overflow-hidden">
+            <div
+              id="testimonials-carousel"
+              class="row flex-nowrap px-2 transition5  items-stretch transition-transform duration-500 ease-in-out"
+              role="region"
+              aria-label="عرض آراء العملاء"
+              aria-live="polite"
+            >
 
-            <div class="carousel-item active px-3">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4">
-                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 proiect-about h-100">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-1-BQH9KX0X.webp" alt="صورة أحمد السعيد" class="rounded-circle border border-3 border-color1" 
-                        style="width:64px;height:64px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">أحمد السعيد</h4>
-                        <p class="text-white text-opacity-50 small m-0">مدير شركة التقنية الحديثة</p>
-                      </div>
+              <!-- Card 1 -->
+              <div class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4">
+                <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 proiect-about h-100">
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-1-BQH9KX0X.webp" alt="صورة أحمد السعيد" class="rounded-circle border border-3 border-color1" 
+                      style="width:64px;height:64px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">أحمد السعيد</h4>
+                      <p class="text-white text-opacity-50 small m-0">مدير شركة التقنية الحديثة</p>
                     </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في التصميم والأداء."</p>
                   </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-2-CyFiVXIH.webp" alt="صورة سيف أسامة" class="rounded-circle border border-3 border-color"
-                        style="width:56px;height:56px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">سيف أسامة</h4>
-                        <p class="text-white text-opacity-50 small m-0">ميديا باير</p>
-                      </div>
-                    </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-3-CmoFRkys.webp" alt="صورة خالد صلاح" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">خالد صلاح</h4>
-                        <p class="text-white text-opacity-50 small m-0">مدير تطوير الأعمال</p>
-                      </div>
-                    </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"شغل محترفين بجد ومواعيد مظبوطة. التطبيق اللي عمله لنا شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."</p>
-                  </div>
+                  <p class="text-white text-opacity-75 m-0">"شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في التصميم والأداء."</p>
                 </div>
               </div>
-            </div>
 
-            <div class="carousel-item px-3">
-              <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4">
+              <!-- Card 2 -->
+              <div
+                class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4"
+              >
+                <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-2-CyFiVXIH.webp" alt="صورة سيف أسامة" class="rounded-circle border border-3 border-color"
+                      style="width:56px;height:56px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">سيف أسامة</h4>
+                      <p class="text-white text-opacity-50 small m-0">ميديا باير</p>
+                    </div>
+                  </div>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-white text-opacity-75 m-0">"المتجر بتاعنا بقى محترف ومريح جداً في الاستخدام. مبيعاتنا زادت 60% في أول شهر. شكراً يا أحمد على المجهود الجبار!"</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4"
+              >
+                <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-3-CmoFRkys.webp" alt="صورة خالد صلاح" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">خالد صلاح</h4>
+                      <p class="text-white text-opacity-50 small m-0">مدير تطوير الأعمال</p>
+                    </div>
+                  </div>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-white text-opacity-75 m-0">"شغل محترفين بجد ومواعيد مظبوطة. التطبيق اللي عمله لنا شغال زي الفل على كل الأجهزة. بننصح بيه جداً لأي مشروع."</p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4"
+              >
                   <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 proiect-about h-100 hover-card">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-4-CI2X8fvY.webp" alt="صورة أحمد الرفاعي" class="rounded-circle border border-3 border-color1" style="width:56px;height:56px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">أحمد الرفاعي</h4>
-                        <p class="text-white text-opacity-50 small m-0">جرافيك ديزاينر</p>
-                      </div>
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-4-CI2X8fvY.webp" alt="صورة أحمد الرفاعي" class="rounded-circle border border-3 border-color1" style="width:56px;height:56px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">أحمد الرفاعي</h4>
+                      <p class="text-white text-opacity-50 small m-0">جرافيك ديزاينر</p>
                     </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"تجربة ممتازة من الأول للآخر. أحمد سمع طلباتنا كويس وقدم أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."</p>
                   </div>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-white text-opacity-75 m-0">"تجربة ممتازة من الأول للآخر. أحمد سمع طلباتنا كويس وقدم أفكار برة الصندوق. الموقع الجديد عجب العملاء جداً."</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-5-BF_5vAuR.webp" alt="صورة عمر عادل" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">عمر عادل</h4>
-                        <p class="text-white text-opacity-50 small m-0">مؤسس شركة ناشئة</p>
-                      </div>
+              </div>
+
+              <!-- Card 5 -->
+              <div
+                class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4"
+              >
+                <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-5-BF_5vAuR.webp" alt="صورة عمر عادل" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">عمر عادل</h4>
+                      <p class="text-white text-opacity-50 small m-0">مؤسس شركة ناشئة</p>
                     </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان ممتاز عشان نجذب مستثمرين. شطارة تقنية وإبداع ملوش حل."</p>
                   </div>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-white text-opacity-75 m-0">"أحمد ساعدنا نحول الفكرة لواقع. الـ MVP اللي عمله كان ممتاز عشان نجذب مستثمرين. شطارة تقنية وإبداع ملوش حل."</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                  <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
-                    <div class="d-flex align-items-center mb-4 gap-3">
-                      <img src="assets/imgs/avatar-6-IIG--UcM.webp" alt="صورة كريم ياسر" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
-                      <div>
-                        <h4 class="text-white fs-5 fw-bold m-0">كريم ياسر</h4>
-                        <p class="text-white text-opacity-50 small m-0">دكتور صيدلي</p>
-                      </div>
+              </div>
+
+              <!-- Card 6 -->
+              <div
+                class="testimonial-card colo-12 col-md-6 col-lg-4 p-2 p-md-3 p-lg-4"
+              >
+                <div class="bg-section rounded-4 p-4 border border-white border-opacity-10 years-about h-100 hover-card">
+                  <div class="d-flex align-items-center mb-4 gap-3">
+                    <img src="assets/imgs/avatar-6-IIG--UcM.webp" alt="صورة كريم ياسر" class="rounded-circle border border-3 border-color" style="width:56px;height:56px;object-fit:cover;">
+                    <div>
+                      <h4 class="text-white fs-5 fw-bold m-0">كريم ياسر</h4>
+                      <p class="text-white text-opacity-50 small m-0">دكتور صيدلي</p>
                     </div>
-                    <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
-                      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-white text-opacity-75 m-0">"الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات وبيرد بسرعة على أي تعديل. النتيجة النهائية أحسن من اللي كنا متخيلينه."</p>
                   </div>
+                  <div class="mb-3 text-warning" aria-label="تقييم 5 من 5 نجوم">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="text-white text-opacity-75 m-0">"الشغل مع أحمد كان مريح ومنظم جداً. دايماً بيبعت تحديثات وبيرد بسرعة على أي تعديل. النتيجة النهائية أحسن من اللي كنا متخيلينه."</p>
                 </div>
               </div>
             </div>
+          </div>
 
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-              <i class="fas fa-angle-left fs-5"></i>
-            </span>
-            <span class="visually-hidden">السابق</span>
+          <!-- Navigation Buttons -->
+          <button
+            id="next-testimonial"
+            class="position-absolute start-0 top-50 translate-middle d-flex justify-content-center align-items-center border-0 rounded-circle bg-brand opacity-50"
+            aria-label="التوصية السابقة"
+            type="button"
+            style="width: 30px;height: 30px;"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon d-flex justify-content-center align-items-center" aria-hidden="true">
-              <i class="fas fa-angle-right fs-5"></i>
-            </span>
-            <span class="visually-hidden">التالي</span>
+          <button
+            id="prev-testimonial"
+            class="position-absolute start-100 top-50 translate-middle rounded-circle d-flex justify-content-center align-items-center border-0 bg-brand opacity-50"
+            type="button"
+            style="width: 30px;height: 30px;"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
-          <div class="carousel-indicators position-relative mt-4" style="bottom:auto; direction: ltr;">
-            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active bg-brand" aria-current="true" aria-label="مجموعة 1"></button>
-            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" class="bg-brand" aria-label="مجموعة 2"></button>
-          </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div
+          class="d-flex justify-content-center py-3 gap-2 mb-5"
+          role="tablist"
+          aria-label="مؤشرات التوصيات"
+        >
+          <button
+            class="carousel-indicator bg-brand active"
+            data-index="0"
+            role="tab"
+            aria-label="التوصية 1"
+            aria-selected="true"
+            type="button"
+          ></button>
+          <button
+            class="carousel-indicator bg-brand"
+            data-index="1"
+            role="tab"
+            aria-label="التوصية 2"
+            aria-selected="false"
+            type="button"
+          ></button>
+          <button
+            class="carousel-indicator bg-brand"
+            data-index="2"
+            role="tab"
+            aria-label="التوصية 3"
+            aria-selected="false"
+            type="button"
+          ></button>
+          <button
+            class="carousel-indicator bg-brand"
+            data-index="3"
+            role="tab"
+            aria-label="التوصية 4"
+            aria-selected="false"
+            type="button"
+          ></button>
         </div>
 
         <div class="bg-brand rounded-4 p-2">

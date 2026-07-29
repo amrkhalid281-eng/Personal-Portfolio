@@ -8,6 +8,49 @@ var portfolioItems = document.querySelectorAll('.portfolio-item');
 var fontSecButtn = document.querySelectorAll('.font-sec-btn');
 var changeTheme = document.querySelectorAll('.change-theme');
 var resetSettings = document.getElementById("reset-settings");
+var nextbtn = document.getElementById("next-testimonial")
+var prevbtn = document.getElementById("prev-testimonial")
+var sizeCard = document.querySelector(".testimonial-card").offsetWidth
+var carouselBtn = document.querySelectorAll(".carousel-indicator")
+
+
+
+/* testimonials sec */
+
+var index =0
+nextbtn.addEventListener('click',function (){
+    index++
+    if(index > 3) {
+        index =0
+    }
+    document.getElementById("testimonials-carousel").style.transform=`translatex(${sizeCard * index}px)`
+})
+prevbtn.addEventListener('click',function (){
+    index--
+    if(index < 0) {
+        index = 3
+    }
+    document.getElementById("testimonials-carousel").style.transform=`translatex(${sizeCard * index}px)`
+})
+
+
+for (let i = 0; i < carouselBtn.length; i++) {
+    carouselBtn[i].addEventListener('click', function () {
+    
+
+    document.getElementById("testimonials-carousel").style.transform=`translatex(${sizeCard * i}px)`
+
+        carouselBtn.forEach(function (btn) {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+        });
+
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+    })
+    
+}
+
 
 
 

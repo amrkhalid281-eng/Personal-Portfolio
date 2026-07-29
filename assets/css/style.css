@@ -445,12 +445,28 @@
 }
 
 /* testimonials */
-.btn-testimonials:hover {
-    box-shadow: 0 8px 20px #0bb6d856;
+#prev-testimonial,
+#next-testimonial {
+    transition: opacity .2s;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-image: none;
+#prev-testimonial:hover,
+#next-testimonial:hover {
+    opacity: 1 !important;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    padding: 0%;
+    border-width: 0;
+    border-radius: 50%;
+    opacity: .3;
+    transition: all .2s;
+    box-sizing: content-box;
+}
+
+.carousel-indicator.active {
+    opacity: 1;
 }
 
 /* Progress bars */
